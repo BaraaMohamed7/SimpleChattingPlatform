@@ -9,24 +9,34 @@
 	</head>
 	<body>
 		<main>
-			<form id="newMessageForm">
-				<input type="text" name="message" />
-				<button type="submit">Create</button>
-			</form>
-			<!-- <form id="signUpForm">
-				<input type="email" name="email" />
-				<input type="password" name="password" />
-				<button type="submit">Create</button>
-			</form> -->
-			<form id="signInForm">
-				<input type="email" name="email" />
-				<input type="password" name="password" />
-				<button type="submit">signIn</button>
-			</form>
-			<form id="nameForm">
-				<input type="text" name="name" />
-				<button type="submit">Create</button>
-			</form>
+			<div class="forms">
+				<form id="newMessageForm">
+					<h2>New Message</h2>
+
+					<input type="text" name="message" />
+					<button type="submit">Create</button>
+				</form>
+				<form id="signUpForm">
+					<h2>Sign Up</h2>
+					<input type="email" name="email" />
+					<input type="password" name="password" />
+					<button type="submit">Create</button>
+				</form>
+				<form id="signInForm">
+					<h2>Sign In</h2>
+
+					<input type="email" name="email" />
+					<input type="password" name="password" />
+					<button type="submit">signIn</button>
+				</form>
+				<form id="nameForm">
+					<h2>Name Setting</h2>
+
+					<input type="text" name="name" />
+					<button type="submit">Set Name</button>
+				</form>
+			</div>
+
 			<div id="messages" class="messages"></div>
 		</main>
 	</body>

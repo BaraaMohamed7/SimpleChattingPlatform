@@ -21,13 +21,13 @@ const auth = getAuth(app);
 const user = auth.currentUser;
 
 // sign up the user
-// const signUpForm = document.getElementById("signUpForm");
-// signUpForm ? signUpForm.addEventListener('submit', async (e) => {
-//   e.preventDefault();
-//   const signUp = await createUserWithEmailAndPassword(auth, signUpForm.email.value, signUpForm.password.value);
-//   console.log(signUp);
-//   console.log('logged in');
-// }) : "";
+const signUpForm = document.getElementById("signUpForm");
+signUpForm ? signUpForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const signUp = await createUserWithEmailAndPassword(auth, signUpForm.email.value, signUpForm.password.value);
+  console.log(signUp);
+  console.log('logged in');
+}) : "";
 
 
 // sign in the user
